@@ -1,11 +1,8 @@
 //Loading modules
 const express = require('express');
 const http = require('http');
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of fb05b5e... Implemented RoutesMgr.
 const app = express();
+const routes = require('./src/Routes/RoutesMgr')
 
 app.set('view engine', 'ejs');
 
