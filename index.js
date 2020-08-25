@@ -1,6 +1,6 @@
+//Loading modules
 const express = require('express');
 const http = require('http');
-
 const app = express();
 
 app.set('view engine', 'ejs');
