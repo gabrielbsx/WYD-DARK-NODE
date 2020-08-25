@@ -1,15 +1,12 @@
 const express = require('express');
-const app = express();
-const routes = require('./src/Routes/RoutesMgr');
+const http = require('http');
 
+const app = express();
 
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname+'/public'));
 
-app.use('/',routes);
-
-app.listen(3000,(req, res) => {
-    console.log("initialize web socket");
-});
-
+http.createServer((req, res) => {
+    res.end('Initialize web server');
+}).listen(3000);
